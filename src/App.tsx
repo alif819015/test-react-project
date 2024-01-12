@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import "./App.css";
-import UseEffectExamople from "./pages/UseEffectExamople";
+import UseRefExample from "./pages/UseRefExample";
+// import UseEffectExamople from "./pages/UseEffectExamople";
 // import FormExample from "./pages/FormExample";
 // import UseStateExample from "./pages/UseStateExample";
 // import UseReducerExample from "./pages/UseReducerExample";
@@ -11,7 +12,8 @@ function App() {
       {/* <UseStateExample counter={counter} setCounter={setCounter}/> */}
       {/* <UseReducerExample></UseReducerExample> */}
       {/* <FormExample></FormExample> */}
-      <UseEffectExamople></UseEffectExamople>
+      {/* <UseEffectExamople></UseEffectExamople> */}
+      <UseRefExample></UseRefExample>
     </div>
   );
 }
