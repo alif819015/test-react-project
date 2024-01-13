@@ -1,6 +1,6 @@
 import { ReactNode, createContext, useState } from "react";
 
-type TThemContext = {
+export type TThemContext = {
   dark: boolean;
   setDark: React.Dispatch<React.SetStateAction<boolean>>;
 };
