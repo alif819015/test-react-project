@@ -5,9 +5,9 @@ import React from "react";
 import ThemeProvider from "./context/ThemeProvider.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <ThemeProvider>
       <App />
     </ThemeProvider>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
