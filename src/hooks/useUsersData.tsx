@@ -5,15 +5,14 @@ const useUsersData = () => {
   const [error, setError] = useState(false);
   const [data, setData] = useState([]);
   const controller = new AbortController();
-  
 
   const url = "https://jsonplaceholder.typicode.com/users";
   const getUsers = async () => {
     setIsLoading(true);
     try {
-      const res = await fetch(url,{signal: controller.signal});
+      const res = await fetch(url, { signal: controller.signal });
       const data = await res.json();
-      console.log('data')
+      console.log("data");
       setIsLoading(false);
       setData(data);
     } catch (err) {

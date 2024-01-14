@@ -2,8 +2,9 @@
 import { useContext } from "react";
 import "./App.css";
 import { TThemContext, ThemContext } from "./context/ThemeProvider";
-import { MenuItem, MenuList } from "./components/Menu";
+// import { MenuItem, MenuList } from "./components/Menu";
 import UserContainer from "./pages/UserContainer";
+import Select from "./components/Select";
 // import UseRefExample from "./pages/UseRefExample";
 // import UseEffectExamople from "./pages/UseEffectExamople";
 // import FormExample from "./pages/FormExample";
@@ -36,7 +37,13 @@ function App() {
         <MenuItem></MenuItem>
       </MenuList> */}
 
-      <UserContainer></UserContainer>
+      {/* <UserContainer></UserContainer> */}
+      <Select>
+        <Select.SelectOption value='Option1'>Option1</Select.SelectOption>
+        <Select.SelectOption value='Option2'>Option2</Select.SelectOption>
+        <Select.SelectOption value='Option3'>Option3</Select.SelectOption>
+        <Select.SelectOption value='Option4'>Option4</Select.SelectOption>
+      </Select>
     </div>
   );
 }
